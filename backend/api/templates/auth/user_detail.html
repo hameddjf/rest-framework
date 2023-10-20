@@ -1,0 +1,14 @@
+{% extends "api/base.html" %}
+{% block main %} 
+
+<article>
+  <h2>{{object.first_name}}</h2>
+  <div>{{object.is_superuser}}</div>
+  <div>{{object.last_login}}</div>
+  <p>{{object.email}}</p>
+  <p>{{object.date_joined}}</p>
+
+</article>
+<hr />
+
+{% endblock main %}
